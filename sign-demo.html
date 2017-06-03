@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        input{min-width: 300px;}
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 21px;
+        }
+        label input{
+            font-size: 18px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            border: 0;
+            border-bottom: 1px solid #e5e5e5;
+            }
+        #box > a img{margin-top: 20px;}
+        #context{margin-top: 20px;}
+        #sign{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+       
+        #btn{background: #ff563f;border: none; padding: 13px 0;border-radius: 7px;color: #ffffff;font-family: sans-serif;cursor: pointer;font-size: 18px;}
+
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="box">
+            <a href="login2.html"><img src="http://i4.buimg.com/1949/110db9209e54ed5c.jpg"></a>
+            <div id="context">
+                <h3>People</h3>
+                <p>Hello there!Welcome Back</p>
+            </div> 
+            <section>
+                <form name="signUp" action="/signUp" method="post">
+                    <div>
+                        <label>
+                            <input type="text" name="email" placeholder="Email Address">
+                            <p class="error email_error"></p>
+                        </label>                      
+                    </div>           
+                    <div>
+                        <label>
+                            <input type="password" name="password" placeholder="Password">
+                            <P class="error password_error"></P>
+                        </label>
+                        
+                    </div>            
+                    <div>
+                        <label>
+                            <input type="password" name="password_confirmation" placeholder="Password Confirmation">
+                            <P class="error password_confirmation_error"></P>
+                        </label>
+                        
+                    </div>            
+                    <div id="sign">
+                        <input id="btn" type="submit" value="Sign In">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        input{min-width: 300px;}
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        label input{
+            font-size: 18px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            border: 0;
+            border-bottom: 1px solid #e5e5e5;
+            }
+        #box > a img{margin-top: 20px;}
+        #context{margin-top: 20px;}
+        #login{
+            margin-top: 15px;
+        }
+        #fotbtn{padding-right: 46px;color: #ff563f;text-decoration: none;margin: 20px 0;}
+        #forgot{justify-content: flex-end;}
+        #btn{background: #ff563f;border: none; padding: 13px 0;border-radius: 7px;color: #ffffff;font-family: sans-serif;cursor: pointer;font-size: 18px;}
+        #bottom{margin: 68.5px 0;margin-left: 47px;}
+        #bottom span{font-family: sans-serif;color: #a9a5a5;}
+        #bottom span a{text-decoration: none;color: #6f6767;font-weight: 400;}
+    </style>
+    
+</head>
+<body>
+    <div id="page">
+        <div  id="box">
+                <a href="login2.html"><img src="http://i4.buimg.com/1949/110db9209e54ed5c.jpg"></a>
+                <div id="context">
+                    <h3>People</h3>
+                    <p>Hello there!Welcome Back</p>
+                </div> 
+                <section>
+                    <form name="login" action="/login" method="post">
+                        <div id="eamil">
+                            <label>
+                                <input type="text" name="email" placeholder="Email Address">
+                            </label>
+                        </div>           
+                        <div id="password">
+                            <label>
+                                <input type="password" name="password" placeholder="Password">
+                            </label>
+                        </div>
+                        <div id="forgot"><a id="fotbtn" href="resetPassword.html">Forgot your password</a></div>           
+                        <div id="login">
+                            <input id="btn" type="submit" value="Login">
+                        </div>
+                    </form>
+                </section>
+                <div id="bottom">
+                    <span>Don't have an account?<a href="sign-demo.html"> Sign In</a></span>
+                </div>
+            <div id="loginbox"></div>
+            <div id="signbox"></div>
+        </div>
+    </div>
+</body>
+</html>
